@@ -1,75 +1,78 @@
 <!DOCTYPE html>
-<html>
-<title>Lauri Jokinen - portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6,p { color: rgb(0, 0, 0); font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px }
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('https://www.turing.com/blog/wp-content/uploads/2022/05/Top-Software-Developer-Skills-to-Learn-This-Year-for-Tech-Jobs-scaled.jpg');
-  min-height: 100%;
-}
-.portfolio-links{
-
-  font-size: 25px;
-
-}
-</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lauri Jokinen - Portfolio</title>
+</head>
 <body>
-    <!-- Sidebar with image -->
-    <nav class="w3-sidebar w3-hide-meium w3-hide-small" style="width:40%">
-    <div class="bgimg"></div>
-    </nav>
+    <header>
+        <h1>Lauri Jokinen - Developer Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, my name is Lauri and I am a 3rd year student in Bachelor of Business Information Technology in HAMK.<br>
+          I'm very passionate about what I do and I'm constantly thriving to improve my own skills and knowledge.<br>
+          My current interest lies in software development. My current plan is to improve my back-end development and from there to see where I will expand my skills.<br>
+          Here are few of my own/school projetcs.</p>
+    </section>
 
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:35%">
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:64px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Lauri Jokinen</b></h1>
-    <p>Student - Bachelor of Business Information Technology</p>
-  </header>
-
-
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify" id="about">
-    <h2>About</h2>
-    <hr class="w3-opacity">
-    <p>Hello, my name is Lauri and I am a 3rd year student in Bachelor of Business Information Technology in HAMK.
-         I'm very passionate about what I do and I'm constantly thriving to improve my own skills and knowledge.
-        My current interest lies in software development. My current plan is to improve my back-end development and from there to see where I will expand my skills.
-        Here are few of my own/school projetcs.
-    </p>
-    <br>
-
-    <h2 class="">My Portfolio </h2><br>
-<div class="portfolio-links">
-    <a href="https://github.com/LauriJo/lol-player-search">
-        <button>LOL - player search</button>
-    </a> <br><br>
-    <a href="https://github.com/LauriJo/Election_Machine">
-        <button>Election machine</button>
-    </a> <br><br>
-    <a href="https://github.com/LauriJo/Vacation_Planning_Website">
-        <button>Vacation planning website</button>
-    </a> 
-</div>
-  <!-- End About Section -->
-  </div>
-
-
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+          <a href="https://github.com/LauriJo/lol-player-search" class="project-link">
+              <button class="project-button">LOL - Player Search</button>
+          </a>
+          <p>
+              League of Legends player search web application - you enter player name and will be presented with a page that shows searched player image, level, competitive ranks,
+              5 most played champions, their ranks, and mastery points<br><br>
+              Tech used: Node.js, Express, JavaScript, HTML, CSS, Riot Developer API
+          </p>
+      </div>
   
-<!-- END PAGE CONTENT -->
-</div>
+      <div class="project">
+          <a href="https://github.com/LauriJo/Election_Machine" class="project-link">
+              <button class="project-button">Election Machine</button>
+          </a>
+          <p>
+            Election Machine - Classic election machine where you have candidates that have answered questions. Then you will answer the same questions and be presented with 5 candidates<br>
+            that has most similiar answers. Admins can add questions and more candidates.<br><br>
 
+            Tech used: Java, MySQL, HTML, CSS, JSP
+        </p>
+      </div>
+  
+      <div class="project">
+          <a href="https://github.com/LauriJo/Vacation_Planning_Website" class="project-link">
+              <button class="project-button">Vacation Planning Website</button>
+          </a>
+          <p>
+          Vacation planning website - Very simple website where there is main page that has a map which has different locations marked that are clickable and will redirect you to<br>
+          clicked page. Also has a questbook where visitors can leave comments behinds<br><br>
+            Tech used: PHP, MySQL, JavaScript, HTML, CSS
+        </p>
+      </div>
+  </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: laurijokinen62@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Lauri Jokinen. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
+
+
